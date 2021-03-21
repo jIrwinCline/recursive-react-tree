@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import TreeList from "./components/tree_list";
+import { mockOrgTreeList } from "./data";
+import { TreeBranch } from "./types/types";
+
+const onSelect = (value: TreeBranch) => {
+  // You can put whatever here
+  alert("you clicked: " + value.label)
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TreeList
+        listMeta={mockOrgTreeList}
+        onSelectCallback={onSelect}
+      />
+    </>
   );
 }
 
 export default App;
+
