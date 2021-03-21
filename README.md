@@ -1,6 +1,6 @@
 # Recursive React Tree
 
-Practical Recursion with React Components
+### Practical Recursion with React Components
 
 This repo exists as a working example of my blog "Practical Recursion with React Components".
 
