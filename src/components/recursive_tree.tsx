@@ -13,13 +13,6 @@ interface TreeItemProps {
     readonly children: ReadonlyArray<JSX.Element>
 }
 
-export interface TreeListProps {
-    readonly listMeta: Tree
-    readonly onSelectCallback: (value: TreeBranch) => void
-    readonly filter?: string
-    readonly onlySelected?: boolean
-}
-
 export interface RecursiveTreeProps {
     readonly listMeta: Tree
     readonly onSelectCallback: (value: TreeBranch) => void
@@ -91,19 +84,7 @@ const RecursiveTree = ({ listMeta, onSelectCallback }: RecursiveTreeProps) => {
     )
 }
 
-const TreeList = ({
-    listMeta,
-    onSelectCallback,
-}: TreeListProps) => {
-    return (
-        <RecursiveTree
-            listMeta={listMeta}
-            onSelectCallback={onSelectCallback}
-        />
-    )
-}
-
-export default TreeList
+export default RecursiveTree
 
 // styles
 

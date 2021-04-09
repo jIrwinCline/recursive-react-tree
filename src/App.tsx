@@ -1,5 +1,5 @@
 import React from "react"
-import TreeList from "./components/tree_list";
+import RecursiveTree from "./components/recursive_tree";
 import { mockOrgTreeList } from "./data";
 import { TreeBranch } from "./types/types";
 
@@ -11,7 +11,7 @@ const onSelect = (value: TreeBranch) => {
 function App() {
   return (
     <>
-      <TreeList
+      <RecursiveTree
         listMeta={mockOrgTreeList}
         onSelectCallback={onSelect}
       />

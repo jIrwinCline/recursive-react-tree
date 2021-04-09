@@ -1,77 +1,69 @@
 import { Tree } from "./types/types"
 
-const uuid = (): string => {
-    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-      const r = (Math.random() * 16) | 0,
-        v = c == "x" ? r : (r & 0x3) | 0x8
-      return v.toString(16)
-    })
-}
-
 export const mockOrgTreeList: Tree = [
     {
       label: "Liberty Health",
-      id: uuid(),
+      id: "1",
       branches: [
         {
           label: "Pacific Northwest",
-          id: uuid(),
+          id: "2",
           branches: [
             {
               label: "East Portland Clinic",
-              id: uuid(),
+              id: "3",
               branches: [],
             },
             {
               label: "Beaverton / Tigard",
-              id: uuid(),
+              id: "4",
               branches: []
             },
             {
               label: "Lake Oswego Regency",
-              id: uuid(),
+              id: "5",
               branches: []
             }
           ]
         },
         {
           label: "Alaska",
-          id: uuid(),
+          id: "6",
           branches: []
         }
       ]
     },
     {
       label: "Northstar Alliance",
-      id: uuid(),
+      id: "7",
       branches: [
         {
           label: "Chicago",
-          id: uuid(),
+          id: "8",
           branches: [
             {
               label: "Southwest Region",
-              id: uuid(),
+              id: "9",
               branches: [
                 {
                   label: "Desplains",
-                  id: uuid(),
+                  id: "10",
                   branches: []
                 },
                 {
                   label: "Oak Lawn",
-                  id: uuid(),
+                  id: "11",
                   branches: []
                 }
               ]
             },
             {
               label: "Northwest Region",
-              id: uuid(),
+              id: "12",
               branches: [
                 {
                   label: "East Morland",
-                  id: uuid(),
+                  id: "13",
                   branches: []
                 },
               ]
@@ -80,26 +72,26 @@ export const mockOrgTreeList: Tree = [
         },
         {
           label: "New York",
-          id: uuid(),
+          id: "14",
           branches: [
             {
               label: "Manhattan",
-              id: uuid(),
+              id: "15",
               branches: []
             },
             {
               label: "Queens",
-              id: uuid(),
+              id: "16",
               branches: []
             },
             {
               label: "5372 Arlington Heights",
-              id: uuid(),
+              id: "17",
               branches: []
             },
             {
               label: "The Earlmore Institute of Health",
-              id: uuid(),
+              id: "18",
               branches: []
             },
           ]
